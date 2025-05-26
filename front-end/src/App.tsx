@@ -1,16 +1,9 @@
-import { Routes, Route} from 'react-router-dom';
-import { Home } from './pages/Home';
+// src/App.tsx
+import { RouterProvider } from 'react-router-dom';
+import router from './Routes.tsx';
 
-function App() {
-  
+const App = () => {
+  return <RouterProvider router={router} />;
+};
 
-  return (
-    <>
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </>
-  )
-}
-
-export default App
+export default App;
